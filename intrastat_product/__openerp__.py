@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 ##############################################################################
 #
-#    Report intrastat service module for OpenERP (DES)
-#    Copyright (C) 2010-2013 Akretion (http://www.akretion.com)
+#    Intrastat Product module for OpenERP
+#    Copyright (C) 2011-2014 Akretion (http://www.akretion.com)
 #    @author Alexis de Lattre <alexis.delattre@akretion.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,29 +22,25 @@
 
 
 {
-    'name': 'France Intrastat Service',
-    'version': '1.2',
+    'name': 'Intrastat Product',
+    'version': '1.1',
     'category': 'Localisation/Report Intrastat',
     'license': 'AGPL-3',
-    'summary': 'Module for Intrastat service reporting (DES) for France',
-    'description': """This module adds support for the "Déclaration Européenne des Services" (DES).
+    'summary': 'Base module for Intrastat Product',
+    'description': """
+This module contains the common objects for the Intrastat Product.
+This module is country-independant.
 
-The DES declaration has been introduced on January 1st 2010 in France. All French companies must send this declaration each month to France's Customs administration if they sell services to other EU companies.
-
-More information about the DES is available on this official web page : http://www.douane.gouv.fr/page.asp?id=3846
-
-Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for any help or question about this module.
+This module has been written by Alexis de Lattre from Akretion
+<alexis.delattre@akretion.com>
     """,
     'author': 'Akretion',
     'website': 'http://www.akretion.com',
     'depends': ['intrastat_base'],
     'data': [
+        'intrastat_view.xml',
         'security/ir.model.access.csv',
-        'intrastat_service_view.xml',
-        'intrastat_service_reminder.xml',
-        'security/intrastat_service_security.xml',
     ],
-    'demo': [],
+    'demo': ['intrastat_demo.xml'],
     'installable': True,
-    'application': True,
 }
