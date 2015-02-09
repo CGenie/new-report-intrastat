@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 ##############################################################################
 #
-#    report_eur1 module for OpenERP
-#    Copyright (C) 2012-2013 Akretion (http://www.akretion.com)
+#    report_eur1 module for Odoo
+#    Copyright (C) 2012-2015 Akretion (http://www.akretion.com)
 #    @author Alexis de Lattre <alexis.delattre@akretion.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -19,4 +19,3 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
