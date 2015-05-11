@@ -37,7 +37,7 @@ from Akretion <alexis.delattre@akretion.com>.
     'author': 'Akretion',
     'website': 'http://www.akretion.com/',
     'depends': [
-        'l10n_fr_intrastat_product',
+        'intrastat_product',
         'report_aeroo',
         'sale',  # we display some fields that are declared in "sale"
         ],
